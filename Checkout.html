@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout | Audiophile</title>
+    <link rel="stylesheet" href="Audiophile.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <section class="header-section">
+        <div class="nav-bar">
+            <div class="nav-bar-con">
+                <div class="hamburger">
+                    <a href=""><i class="fa-solid fa-bars"></i></a>
+                </div>
+                <h1><a href="Home.html">audiophile</a></h1>
+                <ul>
+                    <li><a href="Home.html">HOME</a></li>
+                    <li><a href="Headphones.html">HEADPHONES</a></li>
+                    <li><a href="Speakers.html">SPEAKERS</a></li>
+                    <li><a href="Earphones.html">EARPHONES</a></li>
+                </ul>
+                <a href="Checkout.html"><i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+        </div>
+    </section>
+    <section class="form-section">
+        <div class="go-back-con">
+            <p class="go-back"><a href="Home.html">Go Back</a></p>
+        </div>
+        <div class="form-con">
+            <div class="checkout-con">
+                <div class="resp-con-con">
+                    <h1>CHECKOUT</h1>
+                    <p>BILLING DETAILS</p>
+                    <div class="flexed-con">
+                        <div class="two-in-one-input">
+                            <label for="name">Name</label><br>                                
+                            <input type="text" id="name" class="short-input" placeholder="John Doe"><br><br>
+                            <label for="phone-number">Phone Number</label><br>
+                            <input type="text" id="phone-number" class="short-input" placeholder="+1 202-555-0136">
+                        </div>
+                        <div class="email">
+                            <label for="email">Email Address</label><br>
+                            <input type="email" id="email" class="short-input" placeholder="john@doe.com">
+                        </div>
+                    </div>
+                </div>
+                <div class="shipping-info">
+                    <div class="resp-con-con">
+                        <p>SHIPPING INFO</p>
+                        <label for="address">Your-address</label><br>
+                        <input type="text" id="address" class="long-input" placeholder="Plot 7, Road 1, Skeniks' Estate, Palm Avenue"><br><br>
+                        <div class="flexed-con">
+                            <div class="two-in-one-input">
+                                <label for="name">ZIP Code</label><br>                                
+                                <input type="text" id="name" class="short-input" placeholder="10001"><br><br>
+                                <label for="phone-number">Country</label><br>
+                                <input type="text" id="phone-number" class="short-input" placeholder="United States">
+                            </div>
+                            <div class="email">
+                                <label for="email">City</label><br>
+                                <input type="email" id="email" class="short-input" placeholder="New York">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="payment-details">
+                    <div class="resp-con-con">
+                        <p>PAYMENT DETAILS</p>
+                        <div class="flexed-con">
+                            <div class="payment-method">
+                                Payment Method
+                            </div>
+                            <div class="radio-con">
+                                <div class="short-input">
+                                    <input type="radio" name="payment-method" id="payment-option-1">
+                                    <label for="payment-option-1">e-Money</label>
+                                </div>
+                                <div class="short-input">
+                                    <input type="radio" name="payment-method" id="payment-option-2">
+                                    <label for="payment-option-2">Cash on Delivery</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flexed-con">
+                            <div class="two-in-one-input">
+                                <label for="name">e-Money Number</label><br>                                
+                                <input type="text" id="name" class="short-input" placeholder="238521993"><br><br>
+                            </div>
+                            <div class="email">
+                                <label for="email">e-Money Pin</label><br>
+                                <input type="email" id="email" class="short-input" placeholder="6891">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="summary-con">
+                <div class="summary-con-con">
+                    <h1>SUMMARY</h1>
+                <div class="items-bought">
+                    <div class="item">
+                        <div class="image-goods">
+                            <div class="goods-img-con">
+                                <img src="Images/xx99-mark-ii-headphones.jpg" alt="">
+                            </div>
+                            <div class="name-price">
+                                <p class="name">XX99 Mark II</p>
+                                <p class="price">$2,999</p>
+                            </div>
+                        </div>
+                        <p class="qty">X 1</p>
+                    </div>
+                    <div class="item">
+                        <div class="image-goods">
+                            <div class="goods-img-con">
+                                <img src="Images/xx59-headphones.jpg" alt="">
+                            </div>
+                            <div class="name-price">
+                                <p class="name">XX59</p>
+                                <p class="price">$2,999</p>
+                            </div>
+                        </div>
+                        <p class="qty">X 1</p>
+                    </div>
+                    <div class="item">
+                        <div class="image-goods">
+                            <div class="goods-img-con">
+                                <img src="Images/yx1-wireless-earphones.jpg" alt="">
+                            </div>
+                            <div class="name-price">
+                                <p class="name">YX1</p>
+                                <p class="price">$2,999</p>
+                            </div>
+                        </div>
+                        <p class="qty">X 1</p>
+                    </div>
+                </div>
+                <div class="detail-price">
+                    <p class="detail">TOTAL</p>
+                    <p class="amount">$4,497</p>
+                </div>
+                <div class="detail-price">
+                    <p class="detail">SHIPPING</p>
+                    <p class="amount">$50</p>
+                </div>
+                <div class="detail-price">
+                    <p class="detail">VAT (INCLUDED)</p>
+                    <p class="amount">$899</p>
+                </div>
+                <div class="detail-price">
+                    <p class="detail">GRAND TOTAL</p>
+                    <p class="amount" id="orange-total">$5,446</p>
+                </div>
+                <button><a href="">CONTINUE & PAY</a></button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="footer-section">
+        <div class="nav-bar">
+            <div class="nav-bar-con">
+                <h1><a href="Home.html">audiophile</a></h1>
+                <ul>
+                    <li><a href="Home.html">HOME</a></li>
+                    <li><a href="Headphones.html">HEADPHONES</a></li>
+                    <li><a href="Speakers.html">SPEAKERS</a></li>
+                    <li><a href="Earphones.html">EARPHONES</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-details">
+            <div class="footer-words-con">
+                <p>Audiophile is an all in one stop to fulfill your audio needs. We're a small tea of music lovers and sound specialists who are devoted to helping you get the most out of personal audio. come and visit our demo facility; we're open 7 days a week.</p><br><br>
+                <p>Copyright 2021. All Rights Reserved.</p>
+            </div>
+            <div class="footer-contact-con">
+                <div class="contact facebook">
+                    <a href=""><i class="fa-brands fa-square-facebook"></i></a>
+                </div>
+                <div class="contact twitter">
+                    <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+                </div>
+                <div class="contact instagram">
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

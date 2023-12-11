@@ -1,0 +1,1051 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: 0;
+    list-style: none;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+a{
+    color: inherit;
+}
+
+/* HEADER SECTION */
+.header-section{
+    background-color: black;
+    color: white;
+}
+.nav-bar-con a{
+    color: white;
+}
+.nav-bar{
+    width: 100%;
+    background-color: black;
+}
+.nav-bar-con{
+    width: 88%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+    border-bottom: 1px solid rgb(90, 90, 90);
+}
+.hamburger-and-logo{
+    color: white;
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+.hamburger{
+    display: none;
+}
+.nav-bar-con h1{
+    font-size: 30px;
+}
+.nav-bar-con a:hover{
+    color: rgb(204, 119, 70);
+}
+.nav-bar-con ul{
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 500;
+}
+.nav-bar-con li:hover{
+    color: rgb(204, 119, 70);
+}
+.header-section i{
+    font-size: 20px;
+}
+.header-section i:hover{
+    color: rgb(204, 119, 70);
+}
+.header-section .intro-part{
+    width: 88%;
+    margin: auto;
+    display: flex;
+    padding: 50px 0;
+}
+.header-section .intro-text{
+    width: 45%;
+    padding: 70px 0;
+}
+.header-spaced-word{
+    letter-spacing: 10px;
+    color: gray;
+    margin-bottom: 20px;
+}
+.header-section .big-text{
+    font-size: 58px;
+    margin-bottom: 20px;
+    line-height: 60px;
+}
+.intro-part .extra-words{
+    margin-bottom: 20px;
+    font-weight: 300;
+    color: rgb(203, 203, 203);
+    font-weight: 400;
+}
+.intro-part button{
+    padding: 17px 30px;
+    background-color: rgb(204, 119, 70);
+    border: 0;
+    color: white;
+    margin-top: 20px;
+}
+.intro-part button:hover{
+    background-color: rgb(200, 137, 100);
+}
+.intro-headphone{
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: radial-gradient(rgb(53, 53, 53), black);
+}
+
+.resp-intro-part{
+    background: url(Images/intro\ headset.png), linear-gradient(rgba(0, 0, 0, 0.542), rgba(0, 0, 0, 0.542));
+    background-repeat: no-repeat;
+    background-position: center;
+    display: none;
+}
+.resp-intro-part .intro-content{
+    width: fit-content;
+    margin: 0 auto;
+}
+.resp-intro-part .intro-text{
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+.resp-intro-part .big-text{
+    font-size: 40px;
+}
+.resp-intro-part p{
+    font-size: 15px;
+}
+
+/* END OF HEADER */
+
+
+
+
+/* ORANGE BACKGROUND SPEAKER */
+.products-section{
+    padding: 25vh 0;
+}
+.products-con{
+    width: 88%;
+    margin: auto;
+    display: flex;
+    gap: 3.5%;
+    flex-wrap: wrap;
+}
+.each-product-box{
+    width: 31%;
+    background-color: rgb(248, 248, 248);
+    transition: 0.5s;
+    border-radius: 7px;
+}
+.each-product-box a{
+    color: inherit;
+}
+.each-product-box:hover{
+    background-color: rgb(236, 236, 236);
+}
+.products-con-image{
+    width: fit-content;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+.products-con-image img{
+    width: 65%;
+    margin: 0 auto;
+    height: 65%;
+    transition: 1.0s;
+}
+.each-product-box:hover .products-con-image img{
+    transform: translateY(-100px);
+}
+.products-con-words{
+    text-align: center;
+    margin: -100px 0 50px 0;
+    display: none;
+    transition: 0.5s;
+}
+.each-product-box:hover .products-con-words {
+    display: block;
+}
+.products-con-words h3{
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 3px;
+}
+.products-con-words p{
+    color: gray;
+    font-weight: 500;
+    font-size: 14px;
+    margin-top: 10px;
+}
+.products-con-words span{
+    margin: 0 0 0 10px;
+    color: rgb(204, 119, 70);
+}
+.each-product-box:hover p{
+    color: rgb(204, 119, 70);
+}
+.orange-speaker-bg{
+    width: 88%;
+    margin: 0 auto;
+    background-color: rgb(204, 119, 70);
+    height: 90vh;
+    border-radius: 7px;
+    position: relative;
+    overflow: hidden;
+}
+.orange-speaker-bg .bg-circles{
+    opacity: 0.3;
+    border-radius: 7px;
+}
+.bg-circles .big-circle{
+    width: 600px;
+    height: 600px;
+    border: 2px rgb(199, 199, 199) solid;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation-name: big-circle;
+    animation-duration: 1s;
+    animation-timing-function: 0.5s;
+    animation-iteration-count: infinite;
+}
+.bg-circles .small-circle{
+    width: 300px;
+    height: 300px;
+    border: 2px rgb(199, 199, 199) solid;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation-name: small-circle;
+    animation-duration: 0.5s;
+    animation-timing-function: 0.25s;
+    animation-iteration-count: infinite;
+}
+.bg-circles .smallest-circle{
+    width: 250px;
+    height: 250px;
+    border: 2px rgb(199, 199, 199) solid;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation-name: smallest-circle;
+    animation-duration: 0.75s;
+    animation-timing-function: 0.38s;
+    animation-iteration-count: infinite;
+}
+@keyframes big-circle {
+    25%{
+        scale: 1.2;
+    }
+}
+@keyframes small-circle {
+    50%{
+        scale: 1.2;
+    }
+}
+@keyframes smallest-circle {
+    75%{
+        scale: 1.1;
+    }
+}
+.orange-speaker-con{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.orange-speaker-con .image{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.orange-speaker-con img{
+    height: 130vh;
+    margin-top: 110px;
+}
+.orange-speaker-words{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.orange-speaker-words .details{
+    color: white;
+}
+.orange-speaker-words h1{
+    font-size: 60px;
+    margin-bottom: 30px;
+    line-height: 60px;
+}
+.orange-speaker-words p{
+    font-size: 17px;
+    color: rgb(219, 219, 219);
+    margin-bottom: 40px;
+}
+.orange-speaker-words button{
+    padding: 17px 30px;
+    background-color: rgb(0, 0, 0);
+    border: 0;
+    color: white;
+    margin-top: 20px;
+    font-weight: 400;
+}
+.orange-speaker-words button:hover{
+    background-color: rgb(73, 73, 73);
+}
+/* END ORANGE BACKGROUND SECTION */
+
+/* GREY BACKGROUND SECTION BEGINS */
+.grey-speaker-con{
+    background-image: url(Images/zx7speaker\ gallery\ original.jpg);
+    width: 88%;
+    margin: 50px auto;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    border-radius: 7px;
+}
+.grey-speaker-con .words{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 85px 0;
+}
+.grey-speaker-con h3{
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 2vh;
+}
+.grey-speaker-con button{
+    padding: 17px 30px;
+    background-color: inherit;
+    border: 0;
+    margin-top: 20px;
+    border: 1.5px solid black;
+    transition: 0.3s;
+}
+.grey-speaker-con button:hover{
+    background-color: black;
+    color: white;
+}
+/* END OF GREY BACKGROUND SECTION */
+
+
+/* EARPHONE SECTION BEGINS */
+.black-earphone-con{
+    width: 88%;
+    margin: 0 auto;
+    display: flex;  
+    gap: 4%; 
+}
+.black-earphone-con .earphone-image{
+    width: 48%;
+}
+.black-earphone-con img{
+    border-radius: 7px;
+    width: 100%;
+}
+.black-earphone-con .words{
+    width: 48%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 7px;
+    background-color: rgb(223, 223, 223);
+}
+.black-earphone-con h3{
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 2vh;
+}
+.black-earphone-con button{
+    padding: 17px 30px;
+    background-color: inherit;
+    border: 0;
+    margin-top: 20px;
+    border: 1.5px solid black;
+    transition: 0.3s;
+}
+.black-earphone-con button:hover{
+    background-color: black;
+    color: white;
+}
+/* EARPHONE SECTION ENDS */
+
+
+
+/* SECTION OF THE MAN WITH HEADSET OR OUTRO SECTION */
+.outro-con{
+    width: 88%;
+    margin: 30vh auto;
+    display: flex;
+    gap: 4%;
+}
+.outro-con .words{
+    width: 48%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+.outro-con .details{
+    width: 90%;
+}
+.outro-con .outro-image{
+    width: 48%;
+}
+.outro-image img{
+    border-radius: 7px;
+}
+.outro-con h3{
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 4vh;
+}
+.outro-con span{
+    color: rgb(204, 119, 70);
+}
+.outro-con p{
+    color: rgb(144, 144, 144);
+    font-weight: 400;
+    line-height: 30px;
+}
+/* END OF SECTION OF THE MAN WITH HEADSET */
+
+
+/* START OF FOOTER SECTION */
+.footer-section{
+    background-color: black;
+    padding-bottom: 50px;
+}
+.footer-section .nav-bar-con{
+    padding-top: 80px;
+    border-bottom: 0;
+}
+.footer-section h1{
+    position: relative;
+}
+.footer-section h1::before{
+    content: "";
+    position: absolute;
+    width: 105px;
+    height: 4px;
+    top: -80px;
+    background-color: rgb(204, 119, 70);
+}
+.footer-details{
+    width: 88%;
+    margin: auto;
+    color: rgb(144, 144, 144);
+    display: flex;
+    gap: 4%;
+    align-items: center;
+}
+.footer-words-con{
+    width: 48%;
+}
+.footer-contact-con{
+    width: 48%;
+    display: flex;
+    gap: 20px;
+    justify-content: right;
+}
+.footer-contact-con a{
+    color: white;
+    font-size: 25px;
+}
+.footer-contact-con i:hover{
+    color: rgb(204, 119, 70);
+}
+
+/* END OF FOOTER SECTION */
+
+
+/* END OF HOME PAGE */
+
+
+
+
+
+
+
+
+
+/* BEGINNING OF HEADPHONE PAGE */
+
+.header-section .title-of-page{
+    font-size: 45px;
+    padding: 82px;
+    width: fit-content;
+    margin: 0 auto;
+    font-weight: 600;
+}
+.goods-details-con{
+    width: 88%;
+    margin: 150px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.goods-image{
+    width: 49%;
+}
+.goods-image img{
+    width: 100%;
+    height: 100%;
+    border-radius: 7px;
+}
+.goods-details{
+    width: 40%;
+}
+.goods-details .spaced-words{
+    letter-spacing: 8px;
+    color: rgb(204, 119, 70);
+    margin-bottom: 18px;
+}
+.goods-details .goods-name h1{
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+.goods-details .goods-name p{
+    color: rgb(144, 144, 144);
+    margin-bottom: 30px;
+}
+.goods-details button{
+    padding: 17px 30px;
+    background-color: rgb(204, 119, 70);
+    border: 0;
+    color: white;
+}
+.goods-details button:hover{
+    background-color: rgb(200, 137, 100);
+}
+
+
+/* END OF HEADPHONE PAGE */
+
+
+
+/* BEGINNING OF CHECKOUT PAGE */
+/* Form Section */
+
+.go-back-con{
+    width: 88%;
+    margin: 50px auto;
+}
+.go-back{
+    color: rgb(144, 144, 144);
+    margin: 0 auto;
+}
+.go-back:hover{
+    color: rgb(204, 119, 70);
+}
+.form-section{
+    background-color: rgb(246, 246, 246);
+    padding: 50px 0;
+}
+.form-con{
+    width: 88%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.checkout-con{
+    width: 55%;
+    background-color: white;
+    border-radius: 10px;
+    padding: 7vh 4vw;
+}
+.checkout-con .flexed-con{
+    display: flex;
+    justify-content: space-between;
+}
+.form-con h1{
+    font-size: 35px;
+    font-weight: 500;
+}
+.checkout-con p{
+    font-size: 15px;
+    color: rgb(204, 119, 70);
+    font-weight: 500;
+    margin-bottom: 20px;
+    margin-top: 50px;
+}
+.checkout-con label{
+    font-size: 14px;
+}
+.checkout-con .short-input{
+    padding: 20px 20px;
+    width: 250px;
+    margin: 8px 0;
+    border-radius: 10px;
+    border: 1px solid black;
+    transition: 0.3s;
+    outline: none;
+}
+.checkout-con input:focus{
+    color: rgb(204, 119, 70);
+    border: 1px solid rgb(204, 119, 70);
+    border-color: rgb(204, 119, 70);
+}
+.checkout-con .long-input{
+    padding: 20px 20px;
+    width: 93%;
+    margin: 8px 0;
+    border-radius: 10px;
+    border: 1px solid black;
+    transition: 0.3s;
+    outline: none;
+}
+.payment-method{
+    width: 640px;
+    font-weight: 500;
+}
+.payment-details .short-input{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.payment-details input{
+    width: 20px;
+    height: 20px;
+}
+#payment-option-1{
+    accent-color: #cc6633;
+}
+#payment-option-2{
+    accent-color: #cc6633;
+}
+.form-section label{
+    font-weight: 500;
+}
+
+/* End of Form Section */
+
+
+/* Summary Section of Checkout */
+
+.summary-con{
+    background-color: white;
+    width: 25%;
+    border-radius: 10px;
+    padding: 7vh 3vw;
+    height: fit-content;
+}
+.summary-con h1{
+    font-size: 18px;
+}
+.items-bought .item{
+    display: flex;
+    justify-content: space-between;
+    margin: 4vh 0;
+    align-items: center;
+}
+.items-bought .image-goods{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.goods-img-con{
+    width: 65px;
+    height: 65px;
+    border-radius: 20px;
+}
+.goods-img-con img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+.name-price .name{
+    font-weight: 400;
+}
+.name-price .price{
+    color: rgb(144, 144, 144);
+}
+.summary-con .detail-price{
+    display: flex;
+    justify-content: space-between;
+    margin: 3vh 0;
+}
+.summary-con .detail{
+    color: rgb(144, 144, 144);
+    font-weight: 500;
+}
+.detail-price .amount{
+    font-weight: 600;
+    font-size: 18px;
+}
+.detail-price #orange-total{
+    color: rgb(204, 119, 70);;
+}
+.summary-con button{
+    width: 100%;
+    padding: 3vh 0;
+    margin-top: 20px;
+    background-color: rgb(204, 119, 70);
+    border: 0;
+    color: white;
+}
+
+/* End of Summary Section of Checkout Page */
+
+/* END OF CHECKOUT PAGE */
+
+
+/* CSS ENDS HERE!!!!!!! */
+
+
+
+
+/* RESPONSIVENESS SECTION */
+
+@media (max-width:992px) {
+    .hamburger{
+        display: block;
+    }
+    .nav-bar-con ul{
+        display: none;
+    }
+    .intro-part-con{
+        display: none;
+    }
+    .resp-intro-part{
+        display: block;
+    }
+    .products-con{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 100px;
+    }
+    .each-product-box{
+        width: 100%;
+    }
+    .orange-speaker-bg{
+        height: fit-content;
+        border-radius: 7px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        overflow: hidden;
+    }
+    .orange-speaker-con{
+        position: absolute;
+        top: -100px;
+        width: fit-content;
+        height: fit-content;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+    }
+    .orange-speaker-con .image{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .orange-speaker-con img{
+        height: 23vh;
+    }
+    .orange-speaker-words{
+        width: 100%;
+    }
+    .orange-speaker-words h1{
+        font-size: 30px;
+        margin: 0 0 10px 0;
+        line-height: 40px;
+    }
+    .orange-speaker-words p{
+        font-size: 15px;
+        color: rgb(219, 219, 219);
+        margin-bottom: 20px;
+    }
+    .grey-speaker-con{
+        background-image: url(Images/zx7speaker\ gallery\ original.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+    .grey-speaker-con .words{
+        width: 30%;
+        padding: 65px 40px;
+    }
+    .grey-speaker-con h3{
+        font-size: 30px;
+        margin-bottom: 1vh;
+    }
+    .black-earphone-con{
+        width: 88%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;  
+        gap: 50px; 
+    }
+    .black-earphone-con .earphone-image{
+        width: 100%;
+    }
+    .black-earphone-con img{
+        width: 100%;
+    }
+    .black-earphone-con .words{
+        width: 100%;
+        padding: 30px 0;
+        text-align: center;
+    }
+    .black-earphone-con h3{
+        font-size: 30px;
+        font-weight: 500;
+        margin-bottom: 2vh;
+    }
+    .outro-con{
+        width: 88%;
+        margin: 15vh auto;
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+    .outro-con .words{
+        width: 100%;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+    }
+    .outro-con .details{
+        margin: 0 auto;
+        text-align: center;
+    }
+    .outro-con .outro-image{
+        width: 100%;
+    }
+    .outro-image img{
+        width: 100%;
+        border-radius: 7px;
+    }
+    .outro-con h3{
+        font-size: 30px;
+        font-weight: 500;
+        margin-bottom: 4vh;
+    }
+    .outro-con p{
+        font-size: 14px;
+        line-height: 28px;
+    }
+    .footer-section{
+        background-color: black;
+        padding-bottom: 50px;
+        text-align: center;
+    }
+    .footer-section .nav-bar-con{
+        display: flex;
+        flex-direction: column;
+    }
+    .footer-section ul{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+        font-size: 13px;
+    }
+    .footer-section h1{
+        position: relative;
+        font-size: 25px;
+    }
+    .footer-section h1::before{
+        position: absolute;
+        width: 105px;
+        height: 4px;
+        top: -80px;
+        left: 14%;
+        background-color: rgb(204, 119, 70);
+    }
+    .footer-details{
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        gap: 4%;
+        align-items: center;
+    }
+    .footer-words-con{
+        width: 100%;
+    }
+    .footer-contact-con{
+        width: 100%;
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        margin-top: 20px;
+    }
+    .footer-contact-con a{
+        color: white;
+        font-size: 25px;
+    }
+    .header-section .title-of-page{
+        font-size: 30px;
+        padding: 55px;
+    }
+    .goods-details-con{
+        width: 88%;
+        margin: 100px auto;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+    }
+    #goods-details-con-special{
+        flex-direction: column-reverse;
+    }
+    .goods-image{
+        width: 100%;
+    }
+    .goods-details{
+        width: 100%;
+        text-align: center;
+        margin-top: 30px;
+    }
+    .goods-details .spaced-words{
+        letter-spacing: 8px;
+        color: rgb(204, 119, 70);
+        margin-bottom: 18px;
+    }
+    .goods-details .goods-name h1{
+        font-size: 40px;
+        margin-bottom: 30px;
+    }
+    .goods-details .goods-name p{
+        color: rgb(144, 144, 144);
+        margin-bottom: 30px;
+    }
+}
+/* 992px Responsiveness Section Ends */
+
+/* 1030px Responsiveness Section Begins */
+@media (max-width: 1030px) {
+    .form-con{
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+    .checkout-con{
+        width: 88%;
+        margin: 0 auto;
+    }
+    .checkout-con .flexed-con{
+        display: flex;
+        justify-content: space-between;
+    }
+    .checkout-con .short-input{
+        width: 31vw;
+    }
+    .checkout-con .long-input{
+        width: 73vw;
+    }
+    .payment-method{
+        width: 71vw;
+    }
+    .summary-con{
+        width: 100%;
+        margin: 0 auto;
+        border-radius: 10px;
+        padding: 7vh 0;
+        height: fit-content;
+    }
+    .summary-con-con{
+        width: 71vw;
+        margin: 0 auto;
+    }
+    .summary-con h1{
+        font-size: 18px;
+    }
+}
+/* 1030px Responsiveness Section Ends */
+
+/* 640px Responsiveness Section Begins */
+@media (max-width:640px) {
+.checkout-con .flexed-con{
+    display: flex;
+    flex-direction: column;
+}
+.form-con h1{
+    font-size: 22px;
+}
+.checkout-con p{
+    font-size: 13px;
+    margin-top: 35px;
+}
+.checkout-con label{
+    font-size: 12px;
+}
+.checkout-con .short-input{
+    width: 67vw;
+}
+.checkout-con .long-input{
+    width: 67vw;
+}
+.payment-method{
+    width: 67vw;
+    font-weight: 500;
+}
+.summary-con{
+    width: 95%;
+    margin: 0 auto;
+    padding: 7vh 0;
+    height: fit-content;
+}
+.summary-con-con{
+    width: 71vw;
+    margin: 0 auto;
+}
+.summary-con h1{
+    font-size: 18px;
+}
+}
+/* 640px Responsiveness Section Ends */
+
+/* 440px Responsiveness Section Begins */
+@media (max-width:440px) {
+    .checkout-con .short-input{
+        width: 60vw;
+    }
+    .checkout-con .long-input{
+        width: 60vw;
+    }
+    .payment-method{
+        width: 66vw;
+    }
+}
+/* 440px Responsiveness Section Ends */
+
+/* END OF RESPONSIVENESS SECION */
+
+
+/* Note: All the styling for all other pages on the website (e.g Speaker and Earphone) have been automatically done due to the sharing of same class name with similar stylings in earlier pages (Home Page and Headphone Page) */
+
