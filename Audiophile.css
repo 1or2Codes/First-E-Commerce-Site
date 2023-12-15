@@ -116,7 +116,28 @@ a{
 .resp-intro-part .intro-content{
     width: fit-content;
     margin: 0 auto;
+    position: relative;
 }
+
+ .hamburger-details{
+    position: absolute;
+    top: -50px;
+    width: 50vw;
+    max-height: 0;
+    background-color: rgb(204, 119, 70);
+    color: white;
+    font-size: 17px;
+    line-height: 100px;
+    padding: 0 50px;
+    overflow: hidden;
+    transition: width 0.8s ease, max-height 0.8s ease;
+}
+
+.resp-intro-part .intro-content .hamburger-details.show-nav{
+    width: 50vw;
+    max-height: 100vh;
+}
+
 .resp-intro-part .intro-text{
     width: 50%;
     margin: 0 auto;
